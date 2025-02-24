@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #b9ff66;
+  --primary-dark: #191a23;
+  --primary-gray: #f3f3f3;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk";
+}
+
+.navbar {
+  background: white;
+  padding: 1em 2em;
+}
+.navbar .logo {
+  width: 144px;
+  height: 24px;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+section {
+  margin: 2em 2em 2em 2em;
+}
+
+a {
+  color: black;
+  text-align: center;
+}
+
+.hero {
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  width: 100%;
+  margin-top: 0;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.hero .hero .left-col h1 {
+  order: 1;
+}
+.hero p {
+  width: 90%;
+  margin-bottom: 2em;
+}
+.hero a {
+  text-decoration: none;
+  background: var(--primary-dark);
+  padding: 1em 2em;
+  color: white;
+  display: inline-block;
+  width: 72%;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+div .right-col {
+  order: 2;
+}
+
+.hero .face {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.hero .face img {
+  width: 90%;
+  height: auto;
+}
+
+/* Container for the logos */
+.big-tech {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Wrapper for the logos */
+.first-rol {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content; /* Ensure the content doesn't wrap */
+  animation: scrollLogos 9s linear infinite; /* Adjust timing as needed */
+}
+
+/* Keyframes for right-to-left movement */
+@keyframes scrollLogos {
+  50% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move off-screen to the right */
+  }
+}
+/* Optional: Style for the logos */
+.first-rol img {
+  margin-right: 20px; /* Add spacing between logos */
+  height: 40px; /* Adjust logo size */
+}
+
+/* Optional: Style for the logos */
+.first-rol img {
+  margin-right: 20px; /* Add spacing between logos */
+  height: 40px; /* Adjust logo size */
+}
+
+.second-rol {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content; /* Ensure the content doesn't wrap */
+  animation: scrollLogos 10s linear infinite; /* Adjust timing as needed */
+}
+
+/* Keyframes for the animation */
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0%); /* Start at the initial position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move the logos to the left by 50% of their width */
+  }
+}
+/* Optional: Style for the logos */
+.second-rol img {
+  margin-right: 20px; /* Add spacing between logos */
+  height: 40px; /* Adjust logo size */
+}
+
+.services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.services .container .service-call h2 {
+  font-weight: 500;
+  background: var(--primary-color);
+  text-align: center;
+  display: inline-block;
+  margin: 0 0 0.3em 0;
+  border-radius: 10px;
+  padding: 3px;
+}
+.services .container .services-boards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.services .container .service-board {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: #191a23 1px solid;
+  border-radius: 20px;
+  padding: 25px;
+  width: 50%;
+  max-width: 200px;
+  margin: 1em;
+}
+.services .container .service-board h3 {
+  width: 100%;
+  text-align: left;
+  background: var(--primary-color);
+  margin: 0;
+}
+.services .container .service-board .left-col {
+  display: flex;
+  flex-direction: column;
+}
+.services .container .service-board span {
+  display: block;
+}
+.services .container .service-board p {
+  display: none;
+}
+.services .container .service-board .arrow-g {
+  width: 20px;
+  height: 20px;
+}
+.services .container .service-board .service-img {
+  width: 120px;
+}
+.services .container .service-board .right-col {
+  display: flex;
+  place-content: space-between;
+  align-items: end;
+}
+
+.bg-primary .left-col h3 {
+  background: var(--primary-gray) !important;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+}
+
+.bg-white {
+  background: white;
+}/*# sourceMappingURL=main.css.map */
