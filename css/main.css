@@ -121,6 +121,7 @@ div .right-col {
 
 .second-rol {
   display: flex;
+  padding: 10px;
   width: -moz-max-content;
   width: max-content; /* Ensure the content doesn't wrap */
   animation: scrollLogos 10s linear infinite; /* Adjust timing as needed */
@@ -169,18 +170,19 @@ div .right-col {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: #191a23 1px solid;
-  border-radius: 20px;
-  padding: 25px;
-  width: 50%;
-  max-width: 200px;
-  margin: 1em;
+  border: #191a23 1.1px solid;
+  border-radius: 35px;
+  padding: 35px;
+  width: 70%;
+  max-width: 400px;
+  margin: 0.6em;
 }
 .services .container .service-board h3 {
-  width: 100%;
   text-align: left;
-  background: var(--primary-color);
-  margin: 0;
+  display: inline-block;
+  margin: 1px 1px 0.3em 1px;
+  border-radius: 10px;
+  padding: 3px;
 }
 .services .container .service-board .left-col {
   display: flex;
@@ -193,8 +195,8 @@ div .right-col {
   display: none;
 }
 .services .container .service-board .arrow-g {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .services .container .service-board .service-img {
   width: 120px;
@@ -205,12 +207,111 @@ div .right-col {
   align-items: end;
 }
 
-.bg-primary .left-col h3 {
-  background: var(--primary-gray) !important;
+.service-boardx {
+  background: #f3f3f3;
+  border-radius: 35px;
+  padding: 30px;
+  width: 75%;
+  max-width: 400px;
+  margin: 0.6em;
+}
+.service-boardx a {
+  text-decoration: none;
+  background: var(--primary-dark);
+  padding: 1em 2em;
+  color: white;
+  display: inline-block;
+  width: 72%;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+
+.caseStudies .container {
+  text-align: center;
+}
+.caseStudies .container .case-call h2 {
+  font-weight: 500;
+  background: var(--primary-color);
+  display: inline-block;
+  margin: 0 0 0.3em 0;
+  border-radius: 10px;
+  padding: 3px;
+}
+.caseStudies .container .case-boards {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 1em 0;
+}
+.caseStudies .container .case-board {
+  width: 80%;
+  color: #f3f3f3;
+  padding: 20px;
+  border-radius: 30px;
+}
+.caseStudies .container .case-board a {
+  color: var(--primary-color);
+}
+.caseStudies .container .case-board img {
+  width: 30px;
+  height: 30px;
+}
+.caseStudies .container .case-board .link {
+  display: flex;
+  align-content: center;
+  padding: 5px;
+}
+.caseStudies .container .head-ds h2 {
+  margin: 0;
+}
+
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .bg-gray {
-  background-color: #f3f3f3;
+  background-color: var(--primary-gray);
 }
 
 .bg-primary {
@@ -219,4 +320,20 @@ div .right-col {
 
 .bg-white {
   background: white;
+}
+
+.bg-black {
+  background: black;
+}
+
+.btn {
+  text-decoration: none;
+  background: var(--primary-dark);
+  padding: 1em 2em;
+  color: white;
+  display: inline-block;
+  width: 72%;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 2em;
 }/*# sourceMappingURL=main.css.map */
